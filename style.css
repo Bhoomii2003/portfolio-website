@@ -81,9 +81,6 @@ ul li a:hover{
     animation-delay: .7s;
 
 }
-
-    
-
 .maintext button {
     height: 40px;
     width: 140px;
@@ -289,43 +286,6 @@ button:hover{
         width: 80%;
     }
 }
-/* .mh-skills .mh-professional-skills{
-    padding-right: 60px;
-    color: white;
-}
-.mh-skills .mh-professional-skill h3{
-    font-size: 30px;
-    line-height: 40px;
-    
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 60px;
-}
-.mh-professional-skills{
-    padding-left: 20%;
-}
-.mh-professional-skills h3{
-    font-size: 30px;
-    line-height: 40px;
-    
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 60px;
-
-}
-.mh-professional-progress li{
-    display: inline-block;
-    margin: 0 auto;
-    float: none;
-    width: 48px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.mh-progress{
-    margin-bottom: 10px;
-    font:900 1.14285/1;
-    color: white;
-} */
 .skills__container {
     row-gap: 2rem;
     text-align: center;
@@ -360,12 +320,10 @@ button:hover{
     margin-right: var(--mb-2);
     color: var(--first-color);
   }
-  
-  .skills__names {
+   .skills__names {
     display: flex;
     align-items: center;
   }
-  
   .skills__bar {
     position: absolute;
     left: 0;
