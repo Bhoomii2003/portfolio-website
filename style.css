@@ -1,0 +1,437 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    font-family: 'roboto',sans-serif;
+    background-color: rgb(17,16,16);
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 22px;
+    background-color: rgb(17,16,16);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    align-items: center;
+}
+ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-inline: 22px;
+    font-size: 19px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+ul li a:hover{
+    color: rgb(77, 77, 125);
+    border-bottom: 2px solid rgb(77, 77, 125);
+}
+#bar{
+    display: none;
+}
+.logo{
+    font-size: 22px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    
+}
+.logo span{
+    color: rgb(123, 123, 201);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+    
+}
+.maintext h1{
+    font-size: 70px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.maintext h1 span{
+    color: rgb(123, 123, 201);
+
+}
+.maintext h3{
+    font-size: 28px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.maintext p{
+    font-size: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+    
+
+.maintext button {
+    height: 40px;
+    width: 140px;
+    background-color:rgb(8, 8, 84) ;
+    font-size: 19px;
+    border: none;
+    margin-top:24px;
+    color: white;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid rgb(123, 123, 201);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(123, 123, 201);
+    text-decoration: none;
+    margin: 10px 10px 10px 0px;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.social-media a:hover{
+    background: rgb(123, 123, 201);
+    color: #1f242d;
+    box-shadow: 0 0 20px rgb(123, 123, 201);
+}
+
+button:hover{
+    border: 2px solid rgb(8, 8, 84);
+    background-color: transparent;
+    cursor: pointer;
+}
+.head{
+    text-align: center;
+    padding: 80px;
+}
+.head span{
+    color: rgb(123, 123, 201);
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28,28,28);
+    padding: 52px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+.about img{
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
+    border: 4px solid rgb(123, 123, 201);
+    margin-inline: 65px;
+
+}
+.aboutext p{
+    margin-top: 22px;
+}
+.aboutext h2 span{
+    color: rgb(123, 123, 201);
+}
+.aboutext p span{
+    color:rgb(228,226,226);
+}
+.aboutext h2{
+    font-size: 30px;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card1{
+    width: 250px;
+    padding: 22px;
+    background-image: url(web.des.jpg) ;
+    margin-inline:20px ;
+    margin-top: 22px;
+    border-radius: 5px;
+}
+.card2{
+    width: 250px;
+    padding: 22px;
+   background-image: url(web\ dev.webp);
+    margin-inline:20px ;
+    margin-top: 22px;
+    border-radius: 5px;
+    color: white;
+}
+.card3{
+    width: 250px;
+    padding: 22px;
+    background-image: url(ui\ ux.jpg) ;
+    margin-inline:20px ;
+    margin-top: 22px;
+    border-radius: 5px;
+}
+.card p{
+    margin-top: 11px;
+}
+.card i{
+    font-size: 26px;
+}
+.contact{
+    width: 300px;
+    padding: 20px;
+    background-color: #303030;
+    margin: auto;
+}
+.contact input{
+    width: 90%;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    margin-top: 3px;
+    
+}
+.contact p{
+    margin-top: 20px;
+}
+.contact button{
+    height: 28px;
+    width: 90px;
+    background-color: rgb(68, 68, 234) ;
+    color: white;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px;
+    margin-top: 66px;
+    background-color: rgb(52,51,51);
+}
+.text{
+    margin-top: 20px;
+}
+.text p{
+    margin-top: 12px;
+}
+@media screen and (max-width:1000px){
+    .main{
+        display: block;
+        text-align: center;
+        margin-top: 155px;
+    }
+}
+@media screen and (max-width:800px){
+    ul{
+        display: none;
+
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 23px;
+        background-color: rgb(60,59,59);
+        gap: 20px;
+        border-radius: 5px;
+        position: fixed;
+        top: 75px;
+        right: 3%;
+    }
+    #bar{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:500px){
+    .maintext h1{
+        font-size: 36px;
+        
+    }
+    .maintext h3{
+        font-size: 21px ;
+    }
+    .maintext p{
+        font-size: 20px;
+        
+    }
+    .main img{
+        width: 90%;
+    }
+    .contact{
+        width: 80%;
+    }
+}
+/* .mh-skills .mh-professional-skills{
+    padding-right: 60px;
+    color: white;
+}
+.mh-skills .mh-professional-skill h3{
+    font-size: 30px;
+    line-height: 40px;
+    
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.mh-professional-skills{
+    padding-left: 20%;
+}
+.mh-professional-skills h3{
+    font-size: 30px;
+    line-height: 40px;
+    
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.mh-professional-progress li{
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    width: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.mh-progress{
+    margin-bottom: 10px;
+    font:900 1.14285/1;
+    color: white;
+} */
+.skills__container {
+    row-gap: 2rem;
+    text-align: center;
+  }
+  
+  .skills__subtitle {
+    margin-top: 70px;
+    margin-bottom: var(--mb-2);
+    font-size: 30px;
+  }
+  .skills__subtitle span{
+    color: rgb(123, 123, 201);
+  }
+  .skills__text {
+    margin-bottom: var(--mb-4);
+  }
+  
+  .skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: .5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  }
+  
+  .skills__icon {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+  }
+  
+  .skills__names {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(123, 123, 201);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+  }
+  
+  .skills__html {
+    width: 95%;
+  }
+  
+  .skills__css {
+    width: 85%;
+  }
+  
+  .skills__js {
+    width: 65%;
+  }
+  
+  .skills__ux {
+    width: 85%;
+  }
+  
+  .skills__img {
+    border-radius: .5rem;
+  }
+  @keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  @keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
